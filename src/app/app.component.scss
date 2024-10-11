@@ -1,0 +1,35 @@
+/* Estilo general para el layout */
+.container-fluid {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 250px; /* Ancho del sidebar expandido */
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .sidebar.collapsed {
+    width: 70px; /* Ancho del sidebar colapsado */
+  }
+  
+  .content {
+    flex-grow: 1;
+    transition: margin-left 0.3s ease-in-out;
+    margin-left: 65px; /* Ajuste para el ancho del sidebar */
+  }
+  
+  .navbar {
+    position: relative; /* Asegura que el dropdown se alinee correctamente */
+}
+
+.dropdown {
+    margin-left: auto; /* Mueve el dropdown a la derecha */
+}
+
+.btn-secondary {
+  color: #000 !important;
+  background-color: transparent !important; /* Quitar el fondo */
+  border: none !important; /* Quitar el borde */
+  box-shadow: none !important; /* Quitar la sombra */
+}

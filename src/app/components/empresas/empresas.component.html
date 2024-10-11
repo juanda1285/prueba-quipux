@@ -1,0 +1,67 @@
+<div class="container-fluid">
+    <div class="row">
+        <!-- Card Izquierda (40%) -->
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title text-left">Información de la empresa</h5>
+                    <div class="info-content text-center">
+                        <p><strong>Nombre: </strong></p>
+                        <p>{{ empresa.nombre || 'No disponible' }}</p>
+
+                        <p><strong>Fecha de Creación: </strong></p>
+                        <p>{{ empresa.fechaCreacion || 'No disponible' }}</p>
+
+                        <p><strong>Dirección: </strong></p>
+                        <p>{{ empresa.direccion || 'No disponible' }}</p>
+
+                        <p><strong>Teléfono: </strong></p>
+                        <p>{{ empresa.telefono || 'No disponible' }}</p>
+
+                        <p><strong>Sitio Web: </strong></p>
+                        <p><a [href]="empresa.sitioWeb">{{ empresa.sitioWeb || 'No disponible' }}</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card Derecha (60%) -->
+        <div class="col-md-8">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title text-left">Información del Contacto</h5>
+                    <div class="row">
+                        <!-- Columna Izquierda -->
+                        <div class="col-md-5 text-center">
+                            <p><strong>Dirección: </strong></p>
+                            <p>{{ empresa.contacto?.direccion || 'No disponible' }}</p>
+
+                            <p><strong>Correo: </strong></p>
+                            <p>{{ empresa.contacto?.correo || 'No disponible' }}</p>
+
+                            <p><strong>Sitio Web: </strong></p>
+                            <p><a [href]="empresa.contacto?.sitioWeb">{{ empresa.contacto?.sitioWeb || 'No disponible'
+                                    }}</a></p>
+
+                            <p><strong>Red Social: </strong></p>
+                            <p><a [href]="empresa.contacto?.redSocial">{{ empresa.contacto?.redSocial || 'No disponible'
+                                    }}</a></p>
+                        </div>
+                        <!-- Línea Divisoria -->
+                        <div class="col-md-1">
+                            <div class="vertical-line"></div>
+                        </div>
+                        <!-- Columna Derecha -->
+                        <div class="col-md-5 text-center">
+                            <p><strong>Dirección Correspondencia: </strong></p>
+                            <p>{{ empresa.contacto?.direccionCorrespondencia || 'No disponible' }}</p>
+
+                            <p><strong>Teléfono: </strong></p>
+                            <p>{{ empresa.contacto?.telefono || 'No disponible' }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

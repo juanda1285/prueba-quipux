@@ -1,0 +1,64 @@
+/* sidebar.component.scss */
+.sidebar {
+    position: fixed;
+    left: 0; // Mantener el sidebar siempre visible
+    width: 250px; // Ancho total del sidebar
+    height: 100%;
+    background-color: #312448; // Color de fondo morado
+    transition: width 0.3s ease; // Transición suave para el ancho
+    z-index: 2; // Establecer z-index en 2
+
+    &.collapsed {
+        width: 65px; // Ancho del sidebar cuando se colapsa
+    }
+
+    .sidebar-header {
+        padding: 15px;
+        color: white;
+    }
+
+    .nav {
+        list-style: none;
+        padding: 0;
+        margin-top: 20px; // Espaciado superior para las nav items
+
+        .nav-item {
+            .nav-link {
+                color: white;
+                text-decoration: none;
+                padding: 15px; // Espaciado alrededor del icono
+                display: flex; // Usar flex para alinear icono y texto
+                align-items: center;
+                font-size: 24px; // Tamaño del texto más grande
+                height: 50px; // Altura del enlace para hacer clic más fácil
+
+                .icon {
+                    font-size: 32px; // Tamaño del icono más grande
+                    margin-right: 10px; // Espacio entre icono y texto
+                }
+
+                .item-text {
+                    transition: opacity 0.3s ease; // Transición suave para el texto
+                }
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.1);
+                }
+            }
+        }
+    }
+}
+
+.toggle-button {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    background-color: #312448;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 10; // Asegurar que el botón esté en la parte superior
+    font-size: 24px; // Tamaño del ícono del botón
+}

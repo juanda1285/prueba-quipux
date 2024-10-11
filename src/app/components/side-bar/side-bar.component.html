@@ -1,0 +1,35 @@
+<div class="sidebar" [class.collapsed]="isCollapsed">
+    <div class="ml-5 sidebar-header">
+        <!-- <img *ngIf="!isCollapsed" src="assets/logo.png" alt="Logo" class="img-fluid" style="max-height: 50px;"> -->
+    </div>
+    <ul class="nav mt-5">
+        <li class="nav-item">
+            <a class="nav-link" href="landing">
+                <span class="icon">🏠</span>
+                <span class="item-text" *ngIf="!isCollapsed">Inicio</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="empresas">
+                <span class="icon">📁</span>
+                <span class="item-text" *ngIf="!isCollapsed">Empresas</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="articulos">
+                <span class="icon">📁</span>
+                <span class="item-text" *ngIf="!isCollapsed">Articulos</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="colaboradores">
+                <span class="icon">👤</span>
+                <span class="item-text" *ngIf="!isCollapsed">Colaboradores</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<button class="toggle-button" (click)="toggleSidebar()">
+    <span class="hamburger-icon">☰</span> <!-- Icono de hamburguesa -->
+</button>

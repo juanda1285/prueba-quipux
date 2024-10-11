@@ -1,0 +1,99 @@
+.landing-page {
+    background: rgba(157, 155, 155, 0.116);
+}
+
+.left-column {
+    padding: 50px;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+}
+
+.blur-overlay {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.4); /* Fondo transparente */
+    padding: 20px;
+    border-radius: 0px;
+    backdrop-filter: blur(40px); /* Efecto blur */
+}
+
+.img-fluid {
+    width: 80%; /* Imagen ocupa todo el ancho de la columna */
+    height: auto;
+    object-fit: cover;
+}
+
+.card-footer {
+    padding: 20px; /* Padding del card de trámites */
+    border-left: 3px solid darkblue; /* Borde izquierdo azul oscuro */
+    width: 90%; /* Asegura que ocupe todo el ancho disponible */
+    margin-top: 20px; /* Espaciado superior */
+    background-color: white !important;
+}
+
+.card-footer .card-body {
+    padding: 20px;
+}
+
+.card .card-body {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    justify-content: space-between; /* Distribuye los elementos horizontalmente */
+}
+
+.card .card-body > div {
+    flex: 1; /* Permite que cada div ocupe espacio equitativamente */
+    min-width: 150px; /* Ancho mínimo para evitar que los elementos se superpongan */
+    margin: 10px; /* Espaciado entre los elementos */
+    text-align: center; /* Centra el contenido */
+}
+
+.text-center {
+    min-width: 150px; /* Ancho mínimo para evitar que los elementos se superpongan */
+}
+
+.display-4 {
+    margin-top: 150px;
+    color: rgb(24, 91, 192);
+}
+
+h5 {
+    font-size: 20px !important;
+    color: darkblue; /* Cambia el color del título del card de trámites */
+}
+
+p {
+    font-size: 12px;
+}
+
+/* Nuevas reglas CSS */
+.services {
+    white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
+    font-size: 30px; /* Aumenta el tamaño del texto */
+    color: darkblue !important; /* Cambia el color del texto a azul oscuro */
+}
+
+/* Alineación de los cards */
+.card {
+    margin-top: 30px; /* Asegura que el card con 3 elementos y el de trámites tengan un margen similar */
+}
+
+.row {
+    margin-left: 0px; /* Ajusta según sea necesario */
+    margin-right: 0px; /* Ajusta según sea necesario */
+}
+
+.margin-card{
+    margin-top: 50px;
+}

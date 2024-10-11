@@ -1,0 +1,44 @@
+.container-fluid {
+}
+
+.card {
+  height: 100%; /* Asegura que las cards ocupen toda la altura */
+  margin: 20px 0; /* Espaciado */
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.info-content p {
+  margin: 15px 0; /* Espaciado entre elementos */
+}
+
+.vertical-line {
+  border-left: 1px solid #ccc; /* Línea divisoria */
+  height: 100%; /* Extiende la línea a la altura de la columna */
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.articulo-card {
+    margin: 10px; /* Espacio entre cada artículo */
+    text-align: center; /* Centra el contenido */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: darkblue; /* Cambia el color de fondo de las flechas */
+    border-radius: 50%; /* Opcional: hace que las flechas tengan bordes redondeados */
+}
+
+.carousel-control-prev-icon {
+    /* Cambiar el color de la flecha izquierda */
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='darkblue' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 1.53a.5.5 0 0 1 0 .708L6.691 7l5.051 4.762a.5.5 0 0 1-.707.707l-5.5-5.25a.5.5 0 0 1 0-.707l5.5-5.25a.5.5 0 0 1 .707 0z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    /* Cambiar el color de la flecha derecha */
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='darkblue' viewBox='0 0 16 16'%3E%3Cpath d='M4.258 1.53a.5.5 0 0 0 0 .708L9.309 7 4.258 11.762a.5.5 0 1 0 .707.707l5.5-5.25a.5.5 0 0 0 0-.707l-5.5-5.25a.5.5 0 0 0-.707 0z'/%3E%3C/svg%3E");
+}
