@@ -13,7 +13,7 @@ Ejectuar `ng serve` para correr el servidor de desarrollo .
 
 
 
--Me faltaron muchas otras cosas pero no contaba con tanto tiempo hoy .
+-Me faltaron otras cosas por desarrollar pero no contaba con tanto tiempo hoy .
 Feliz Dia.
 
 
