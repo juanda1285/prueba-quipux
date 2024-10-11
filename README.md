@@ -4,12 +4,12 @@
 
  ## Configurar proyecto.
 
- Despues de clonar el proyecto , ejecutar  `npm i` para instalar las dependencias
+ Despues de clonar el proyecto , ejecutar  `npm i` dentro del proyecto para instalar las dependencias
 
 
 ## Development server
 
-Ejectuar `ng serve` para correr el servidor de desarrollo . 
+Ejectuar `ng serve` dentro del proyecto para correr el servidor de desarrollo . 
 
 
 
